@@ -7,8 +7,8 @@ from models.author import Author
 import repositories.author_repository as author_repository
 import repositories.book_repository as book_repository
 
-# task_repository.delete_all()
-# user_repository.delete_all()
+book_repository.delete(id)
+
 
 book1 = Book("Positive thinking", "Self-development", 233)
 book_repository.save(book1)
