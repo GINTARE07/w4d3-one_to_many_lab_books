@@ -1,4 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-This where books will be diplayed
+{% for book in all_books %}
+<div class="Books">
+    <div class="name">
+      {{book.name}}
+      <div class="genre">
+        {{book.genre}}
+        <div class="pages">
+            {{book.pages}}
+      </div>
+    <div class="buttons">
+</div>
+    
+    
+
+{% endfor %}
 {% endblock %}
